@@ -1,5 +1,9 @@
 [user]
 	name = Andrew Gibb
 	email = andrew.gibb@bbc.co.uk
+[push]
+	default = simple
 [url "https://github.com"]
 	insteadOf = git://github.com
+[github]
+	user = AndrewGibb

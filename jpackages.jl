@@ -1,6 +1,6 @@
 #!/usr/bin/env julia
 
-mypackages = [
+const mypackages = [
 "ArgParse",
 "BinDeps",
 "Cairo",
@@ -36,7 +36,7 @@ mypackages = [
 ]
 
 # Internal packages
-ipackages = [
+const ipackages = [
 "https://github.com/bbc/ARRIRAW.jl.git",
 "https://github.com/bbc/EXRImages.jl.git",
 "https://github.com/bbc/V210Images.jl.git",

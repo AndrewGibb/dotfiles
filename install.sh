@@ -26,15 +26,8 @@ else
   cd /home/andrewg
 end
 
-# source the files (order matters)
+source .dotfiles/.dots
 if $OS = "OSX"
-  for DOTFILE in `/Users/andrewg/.dotfiles/.{.env,.dots,macapps.sh}`
-  do
-    [ -f “$DOTFILE” ] && source “$DOTFILE”
-  done
-else
-  for DOTFILE in `find /home/andrewg/.dotfiles.{.env,.dots}`
-  do
-    [ -f “$DOTFILE” ] && source “$DOTFILE”
-  done
-fi
+  source .dotfiles/macapps.sh
+  source .dotfiles/maccli.sh
+end
