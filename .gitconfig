@@ -1,0 +1,5 @@
+[user]
+	name = Andrew Gibb
+	email = andrew.gibb@bbc.co.uk
+[url "https://github.com"]
+	insteadOf = git://github.com

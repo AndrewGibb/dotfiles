@@ -1,0 +1,5 @@
+# .dots
+
+ln -sv "~/.dotfiles/git/.gitconfig"
+ln -sv "~/.dotfiles/git/.tmux.conf"
+ln -sv "~/.dotfiles/git/.vimrc"

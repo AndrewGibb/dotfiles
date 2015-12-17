@@ -1,0 +1,47 @@
+#!/bin/bash
+
+PROGRAMS="atom postbox slack basictex firefox evernote iterm2 steam google-chrome caffeine gimp xquartz carbon-copy-cloner gimp github-desktop grandperspective inkscape limechat mendeley-desktop microsoft-office papers redcine-x-pro shiori skype sonos sourcetree textmate things vlc kensington-trackball-works dropbox"
+
+for prog in `echo $PROGRAMS`
+do
+  brew cask install $prog
+done
+
+exit 0
+
+# Not in Cask:
+# ARRIRAWConverter
+# ARC_CMD
+# Blackmagic utils
+# CKAN
+# dzc-ffor
+# Pages, Numbers, Keynote
+# MS Remote Desktop?? (part of office?)
+# Xcode (+ cmd line)
+# Rapport
+
+# Don't want to install via cask:
+# 1password
+
+# Steam:
+# YNAB
+# KSP
+
+
+# Once installed, no longer needed:
+# Juno, Lighttable
+# LightPaper
+# LibreOffice
+# matlab
+# Loose Leaves
+# MacDown
+# Monodraw
+# Mou
+# Handbrake
+# MPEG Streamclip
+# MPlayerX
+# VirtualBox
+# VMWare Fusion
+# fuse-ext2 & OSXFUSE
+# Flash Player
+# miniconda
