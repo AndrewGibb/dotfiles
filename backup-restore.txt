@@ -1,0 +1,48 @@
+Intro here:
+https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789#.dor4dkliv
+
+dotfiles all go on git in a .dotfiles folder.
+
+Restore procedure:
+$ apt-get install git # Or manually
+$ git clone https://github.com/andrewg/.dotfiles .dotfiles
+$ cd .dotfiles
+$ ./install.sh
+
+install.sh:
+-----------
+- Symlinks ~/.whatever to ~/.dotfiles/topic/.whatever
+ - .vim, .vimrc
+ - .profile, .bashrc
+ - .ssh (CONFIDENTIAL)
+ - .gitconfig
+ - .tmux.conf
+- install homebrew
+- install homebrew cask
+- install applications
+
+Next, manually:
+- install non-cask apps
+- install julia
+- run jpackages.jl
+- Do some first-time setup for Vundle?
+- Add bits I think I need to BasicTex
+- Atom extensions
+
+
+install.sh should probably be broken up, as per the link at the top.
+Should I use more than one? There's almost certainly some rd-confidential bits which should live on git0 rather than github.
+
+dotfiles.git
+------------
+Contains:
+ - install.sh
+ - all mac dotfiles
+ - linux dotfiles (combine them?)
+
+Things excluded:
+proxy stuff
+.npmrc
+.npm
+.julia
+.julia_history
