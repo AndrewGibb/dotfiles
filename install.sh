@@ -12,14 +12,6 @@ else
     OS=$(uname -s)
 fi
 
-# Install homebrew
-if $OS = OSX
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  brew tap caskroom/cask
-  brew install brew-cask
-  brew tap caskroom/versions
-end
-
 if $OS = "OSX"
   cd /Users/andrewg
 else
@@ -27,6 +19,16 @@ else
 end
 
 source .dotfiles/.dots
+# Install homebrew
+
+if $OS = OSX
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  brew tap caskroom/cask
+  brew install brew-cask
+  brew tap caskroom/versions
+end
+
+
 if $OS = "OSX"
   source .dotfiles/macapps.sh
   source .dotfiles/maccli.sh

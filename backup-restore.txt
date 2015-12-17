@@ -8,9 +8,15 @@ Restore procedure:
 1a. if an RD machine, clone git0.rd.bbc.co.uk:misc/dotfiles-conf
 1a. set up ssh
 
+Because of stubs, it looks like installing xcode and the dev tools is basically mandatory here.
+Then open xcode to agree to the license.
+
 2. From the terminal
 $ git clone https://github.com/AndrewGibb/dotfiles .dotfiles
 $ cd .dotfiles
+
+You must either connect over wifi or manually set the http proxy before you do this.
+
 $ ./install.sh
 3. Manually install non-cask apps (see macapps.sh)
 4. Manually install julia
@@ -20,6 +26,17 @@ $ julia jpackages.jl
 7. Add bits I think I need to BasicTex
 8. Atom extensions
 9. reinstall home, etc from backup
+
+To get the correct prompt, set hostname in Sys Prefs/Sharing, and also do
+$ sudo scutil --set HostName <newname>
+
+log in to dropbox & wait for sync
+Install 1password
+Install solarized from the web
+install vundle from github
+
+Try this to set up solarized in vim & tmux:
+http://www.terminally-incoherent.com/blog/2012/10/17/vim-solarized-and-tmux/
 
 install.sh:
 -----------
@@ -32,6 +49,8 @@ install.sh:
 - install homebrew
 - install homebrew cask
 - install applications
+
+anything which you source must be executable, on Mac at least. 744 permissions
 
 At some stage:
 - setup github_rsa, id_rsa, beeb_rsa

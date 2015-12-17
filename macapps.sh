@@ -21,11 +21,15 @@ exit 0
 # Rapport
 
 # Don't want to install via cask:
-# 1password
+# 1password (Not from Mac App store either!)
 
 # Steam:
 # YNAB
 # KSP
+
+# Failed December 2015
+# github-desktop
+
 
 
 # Once installed, no longer needed:
