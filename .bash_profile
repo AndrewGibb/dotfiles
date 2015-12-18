@@ -1,6 +1,6 @@
 # If not running interactively, don't do anything
 
-[ -z "$PS1" ] && return
+#[ -z "$PS1" ] && exit
 
 # OS
 
@@ -11,14 +11,15 @@ else
 fi
 
 # source the files (order matters)
-if $OS = "OSX"
-  for DOTFILE in `/Users/andrewg/.dotfiles/.{.env}`
-  do
-    [ -f “$DOTFILE” ] && source “$DOTFILE”
+if [ "$OS" = "OSX" ]; then
+  for DOTFILE in /Users/andrewg/.dotfiles/.{bashrc,env}; do
+	echo $DOTFILE
+   [ -f $DOTFILE ] && source $DOTFILE
   done
 else
-  for DOTFILE in `find /home/andrewg/.dotfiles.{.env}`
+  for DOTFILE in /home/andrewg/.dotfiles.{env,bashrc}
   do
-    [ -f “$DOTFILE” ] && source “$DOTFILE”
+    [ -f $DOTFILE ] && source $DOTFILE
   done
 fi
+

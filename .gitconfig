@@ -7,3 +7,6 @@
 	insteadOf = git://github.com
 [github]
 	user = AndrewGibb
+[core]
+    editor = "atom --wait"
+

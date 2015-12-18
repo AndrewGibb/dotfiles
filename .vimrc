@@ -1,12 +1,13 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
+" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle
 " " required! 
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 "
 " " My Plugins here:
 " "
@@ -32,12 +33,11 @@ set shiftwidth=4
 set expandtab
 
 " Turn on solarized:
-syntax on
-"let g:solarized_termcolors=256
+" set t_Co=256
+syntax enable
 "let g:solarized_termtrans=1
-set t_Co=256
 set background=dark
-"colorscheme solarized
+colorscheme solarized
 
 " Make F8 toggle tagbar
 nmap <F8> :TagbarToggle<CR>
