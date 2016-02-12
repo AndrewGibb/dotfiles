@@ -11,14 +11,15 @@ else
 fi
 
 # source the files (order matters)
+<<<<<<< HEAD
 if [ "$OS" = "OSX" ]; then
   for DOTFILE in /Users/andrewg/.dotfiles/.{bashrc,env}; do
    [ -f $DOTFILE ] && source $DOTFILE
   done
 else
-  for DOTFILE in /home/andrewg/.dotfiles.{env,bashrc}
-  do
-    [ -f $DOTFILE ] && source $DOTFILE
-  done
+  [ -f "/home/andrewg/.dotfile/.env" ] && source "/home/andrewg/.dotfile/.env"
+#  for DOTFILE in `find /home/andrewg/.dotfiles/{.env}`
+#  do
+#    [ -f “$DOTFILE” ] && source “$DOTFILE”
+#  done
 fi
-
