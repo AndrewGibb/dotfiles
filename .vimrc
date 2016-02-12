@@ -28,9 +28,17 @@ Plugin 'JuliaLang/julia-vim'
 
 call vundle#end()
 filetype plugin indent on     " required!
+" Tabs
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+" word wrapping, without inserting newlines
+set wrap
+set linebreak
+set nolist  " list disables linebreak
+set textwidth=0
+set wrapmargin=0
 
 " Turn on solarized:
 " set t_Co=256

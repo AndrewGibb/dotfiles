@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CLIPROGS="gcc pkg-config ghostscript imagemagick tmux netpbm homebrew/science/hdf5 htop-osx ilmbase openexr"
+CLIPROGS="gcc pkg-config ghostscript imagemagick tmux netpbm homebrew/science/hdf5 htop-osx ilmbase openexr cmake"
 
 # Possible others:
 # protobuf241

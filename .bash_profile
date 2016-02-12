@@ -13,7 +13,6 @@ fi
 # source the files (order matters)
 if [ "$OS" = "OSX" ]; then
   for DOTFILE in /Users/andrewg/.dotfiles/.{bashrc,env}; do
-	echo $DOTFILE
    [ -f $DOTFILE ] && source $DOTFILE
   done
 else

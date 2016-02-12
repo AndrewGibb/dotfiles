@@ -10,6 +10,7 @@ done
 exit 0
 
 # Not in Cask:
+# Firefox add-ons (installed via sync)
 # ARRIRAWConverter
 # ARC_CMD
 # Blackmagic utils

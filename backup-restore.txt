@@ -18,14 +18,19 @@ $ cd .dotfiles
 You must either connect over wifi or manually set the http proxy before you do this.
 
 $ ./install.sh
+6. First-run setup for Vundle - open vim and do :PluginInstall
 3. Manually install non-cask apps (see macapps.sh)
 4. Manually install julia
+4.5 open up Julia, do ENV["PYTHON"] = "" or similar, then Pkg.add("PyPlot")
 5. from the terminal do
 $ julia jpackages.jl
-6. First-run setup for Vundle??
 7. Add bits I think I need to BasicTex
 8. Atom extensions
 9. reinstall home, etc from backup
+10. Configure
+ - email
+ - remote desktop
+ -
 
 To get the correct prompt, set hostname in Sys Prefs/Sharing, and also do
 $ sudo scutil --set HostName <newname>
@@ -54,6 +59,13 @@ anything which you source must be executable, on Mac at least. 744 permissions
 
 At some stage:
 - setup github_rsa, id_rsa, beeb_rsa
+
+homebrew cask doesn't allow updates. Junk this step.
+Still need to:
+ - firefox forge cert and password
+ - PEM root cert or whatever it's called.
+
+Ordering of git things. Signing in and out? ssh?
 
 
 dotfiles.git
