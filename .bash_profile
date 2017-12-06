@@ -22,3 +22,7 @@ else
 #    [ -f “$DOTFILE” ] && source “$DOTFILE”
 #  done
 fi
+
+
+# make tmux vim solarized colours behave
+#alias tmux="TERM=screen-256color tmux"

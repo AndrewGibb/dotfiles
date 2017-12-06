@@ -41,7 +41,7 @@ set textwidth=0
 set wrapmargin=0
 
 " Turn on solarized:
-" set t_Co=256
+set t_Co=16
 syntax enable
 "let g:solarized_termtrans=1
 set background=dark
