@@ -8,5 +8,5 @@
 [github]
 	user = AndrewGibb
 [core]
-    editor = "atom --wait"
+    editor = vim
 
