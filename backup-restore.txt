@@ -18,6 +18,7 @@ $ cd .dotfiles
 You must either connect over wifi or manually set the http proxy before you do this.
 
 $ ./install.sh
+ - Install Vundle using git from github. Use instructions you find there.
 6. First-run setup for Vundle - open vim and do :PluginInstall
 3. Manually install non-cask apps (see macapps.sh)
 4. Manually install julia

@@ -12,11 +12,11 @@ else
     OS=$(uname -s)
 fi
 
-if $OS = "OSX"
+if [ $OS = "OSX" ]; then
   cd /Users/andrewg
 else
   cd /home/andrewg
-end
+fi
 
 source .dotfiles/.dots
 # Install homebrew
@@ -34,7 +34,7 @@ else
   cd /home/andrewg
 fi
 
-source .dotfiles/.dots
+#source .dotfiles/.dots
 if [ $OS = "OSX" ]; then
   source .dotfiles/macapps.sh
   source .dotfiles/maccli.sh

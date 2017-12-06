@@ -1,8 +1,14 @@
 # .dots
+echo $OS
 
-ln -sv "~/.dotfiles/.gitconfig"
-ln -sv "~/.dotfiles/.tmux.conf"
-ln -sv "~/.dotfiles/.vimrc"
-ln -sv "~/.dotfiles/.bash_profile"
-ln -sv "~/.dotfiles/.bashrc"
+if [ $OS = "Linux" ]; then
+    base=/home/andrewg
+elif [ $OS = "OSX" ]; then
+    base=/Users/andrewg
+fi
+
+ln -sv "${base}/.dotfiles/.gitconfig"
+ln -sv "${base}/.dotfiles/.tmux.conf"
+ln -sv "${base}/.dotfiles/.vimrc"
+ln -sv "${base}/.dotfiles/.bash_profile"
 
