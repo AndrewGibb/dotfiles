@@ -50,4 +50,6 @@ colorscheme solarized
 " Make F8 toggle tagbar
 nmap <F8> :TagbarToggle<CR>
 
+" Make backspace behave in a sane way:
+set backspace=indent,eol,start
 
