@@ -22,9 +22,9 @@ source .dotfiles/.dots
 # Install homebrew
 if [ $OS = OSX ]; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  brew tap caskroom/cask
-  brew install brew-cask
-  brew tap caskroom/versions
+#  brew tap caskroom/cask
+#  brew install brew-cask
+#  brew tap caskroom/versions
 fi
 
 
@@ -36,6 +36,6 @@ fi
 
 #source .dotfiles/.dots
 if [ $OS = "OSX" ]; then
-  source .dotfiles/macapps.sh
+#  source .dotfiles/macapps.sh
   source .dotfiles/maccli.sh
 fi

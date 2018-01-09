@@ -1,6 +1,7 @@
 #!/bin/bash
 
-PROGRAMS="atom postbox slack basictex firefox evernote iterm2 steam google-chrome caffeine gimp xquartz carbon-copy-cloner gimp github-desktop grandperspective inkscape limechat mendeley-desktop microsoft-office papers shiori skype sonos sourcetree textmate things vlc kensington-trackball-works dropbox"
+#PROGRAMS="atom postbox slack basictex firefox evernote iterm2 steam google-chrome caffeine gimp xquartz carbon-copy-cloner gimp github-desktop grandperspective inkscape limechat mendeley-desktop microsoft-office papers shiori skype sonos sourcetree textmate things vlc kensington-trackball-works dropbox"
+PROGRAMS=
 
 for prog in `echo $PROGRAMS`
 do
