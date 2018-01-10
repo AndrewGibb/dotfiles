@@ -33,6 +33,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+" New lines have the same indentation as previous:
+set autoindent
+
 " word wrapping, without inserting newlines
 set wrap
 set linebreak
