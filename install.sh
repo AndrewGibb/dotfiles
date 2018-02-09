@@ -12,6 +12,8 @@ else
     OS=$(uname -s)
 fi
 
+installhome=`pwd`
+
 if [ $OS = "OSX" ]; then
   cd /Users/andrewg
 else
@@ -27,15 +29,15 @@ if [ $OS = OSX ]; then
 #  brew tap caskroom/versions
 fi
 
-
-if [ $OS = "OSX" ]; then
-  cd /Users/andrewg
-else
-  cd /home/andrewg
-fi
+cd $installhome
+#if [ $OS = "OSX" ]; then
+#  cd /Users/andrewg
+#else
+#  cd /home/andrewg
+#fi
 
 #source .dotfiles/.dots
 if [ $OS = "OSX" ]; then
 #  source .dotfiles/macapps.sh
-  source .dotfiles/maccli.sh
+  source maccli.sh
 fi
