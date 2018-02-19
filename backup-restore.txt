@@ -11,17 +11,99 @@ Install iTerm2
 Install XQuartz (depended on by freeglut, which is part of my homebrew)
 Install git0.rd.bbc.co.uk/misc/dotfiles-conf and run install.sh
 Generate an RSA key and add to github, git0.
-Install github.com/ANdrewGibb/dotfiles and run install.sh
+Install github.com/AndrewGibb/dotfiles and run install.sh
 Install Vim plugins (see github.com/VundleVim/Vundle.vim on the web)
 Install Postbox, compy config from last machine. Troubleshoot. 
 Try to mount network shares.
 Install office 365 (via portal.office.com today. Tomorrow???)
+Check that Outlook works.
+
+home dir:
+ - Run restore script (installs novc_code, Documents, confidential, GTD) It's in ~/code/scripts
+ - Copy Personal, Music, Movies, to-read, Desktop via external disk.
+ - Manually back up or migrate contents of ~/code
+ - Manually back up or migrate contents of ~/data
+ - Re-install miniconda. Currently here: https://conda.io/miniconda.html
+ - Restore ~/projects. 
+
+Configure Firefox for forge access
+install cmake
+install Julia
+
+Try to installGo Pro studio (.app is on /multiview/LightfieldReferenceVideo/ somewhere)
+
+Install remaining apps (List from 2013 machine, edited:)
+
+in /Applications:
+
+ARRIRAWConverter.app
+Adobe Reader.app
+Arduino.app
+Battle.net.app
+BlueStacks.app
+CKAN
+Carbon Copy Cloner.app
+Cinderella2.app
+Cisco Spark.app
+DiffMerge.app
+Discord.app
+DzC-FFoR
+GeoGebra Graphing Calculator.app
+GitHub Desktop.app
+GoPro Studio.app
+Google Chrome.app
+Graphic.app
+HandBrake.app
+Hearthstone
+JuliaPro-0.5.1.1.app
+Keynote.app
+Kolor Eyes 1.6.app (360 video viewer)
+MusicManager.app
+Numbers.app
+OmniGraffle 5.app
+Pages.app
+Paintbrush.app
+Papers.app
+QuickTime Player.app
+RemotePlay.app
+Scrivener.app
+Shiori.app
+Slack.app
+SourceTree.app
+Spotify.app
+TeX            # There was some shenanigans installing TeX. Be careful.
+Todoist.app
+Typeeto.app
+VirtualBox.app
+WordService.app
+Xcode.app
+duet.app
+p4merge.app
+uTorrent.app
 
 
+in ~/Applications: (Duplicates are aliases.)
 
-
-
-
+Atom.app
+Caffeine.app
+Evernote.app
+GIMP.app
+GrandPerspective.app
+Inkscape.app
+LimeChat.app
+Mendeley Desktop.app
+Papers.app
+Skype.app
+Sonos.app
+SourceTree.app
+TextMate.app
+VLC.app
+You Need A Budget 4 (YNAB).app
+arara
+arara.jar
+docs (for arara)
+freac.app
+rules (for arara, I think)
 
 
 
