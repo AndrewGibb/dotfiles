@@ -1,3 +1,37 @@
+2018 Version:
+------------
+Or, wat I done migrating.
+
+Set up touchID
+Install Dropbox, sign in (personal)
+Install 1Password, faff about to get license file. 
+Install Steam.
+Install git from git-scm.com
+Install iTerm2
+Install XQuartz (depended on by freeglut, which is part of my homebrew)
+Install git0.rd.bbc.co.uk/misc/dotfiles-conf and run install.sh
+Generate an RSA key and add to github, git0.
+Install github.com/ANdrewGibb/dotfiles and run install.sh
+Install Vim plugins (see github.com/VundleVim/Vundle.vim on the web)
+Install Postbox, compy config from last machine. Troubleshoot. 
+Try to mount network shares.
+Install office 365 (via portal.office.com today. Tomorrow???)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2013 version:
+------------
 Intro here:
 https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789#.dor4dkliv
 

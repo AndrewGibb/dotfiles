@@ -14,6 +14,7 @@ Plugin 'VundleVim/Vundle.vim'
 " " original repos on github
 Plugin 'majutsushi/tagbar'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'craigemery/vim-autotag'
 "
 " " Github repos of the user 'vim-scripts'
 " " => can omit the username part
