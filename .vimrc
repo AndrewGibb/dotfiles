@@ -29,6 +29,9 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'jesseleite/vim-agriculture'
 Plugin 'IN3D/vim-raml'
 " Plugin 'ctrlpvim/ctrlp.vim'
+" Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'wlangstroth/vim-racket'
+Plugin 'otherjoel/vim-pollen'
 "
 " " Github repos of the user 'vim-scripts'
 " " => can omit the username part
@@ -99,3 +102,9 @@ set errorformat+=%f:%l:%c\ %m
 
 " Autocompletion??
 set omnifunc=syntaxcomplete#Complete
+" Show file encoding in the status bar
+if has("statusline")
+    set statusline=%<%f\ %h%m%r%=%{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
+endif
+
+set laststatus=2
