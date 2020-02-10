@@ -72,6 +72,9 @@ Slack.app
 SourceTree.app
 Spotify.app
 TeX            # There was some shenanigans installing TeX. Be careful.
+    # The problem is a conflict between homebrew ghostscript (used by Octave) 
+    # and the Ghostscript used by MacTex. I have ghostscript installed, althoug
+    # I'm not using Octave any more. 
 Todoist.app
 Typeeto.app
 VirtualBox.app
