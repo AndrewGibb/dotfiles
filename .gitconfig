@@ -5,7 +5,15 @@
 	default = simple
 [url "https://github.com"]
 	insteadOf = git://github.com
-[github]
-	user = AndrewGibb
 [core]
     editor = vim
+[github]
+	user = AndrewGibb
+[credential]
+    helper = store
+[difftool "p4merge"]
+	path = /Applications/p4merge.app/Contents/MacOS/p4merge
+[diff]
+	tool = p4merge
+[difftool]
+	prompt = false
