@@ -20,6 +20,7 @@ if [ $OS = "OSX" ]; then
 else
   cd /home/andrewg
 fi
+# Replace all of the above with `cd`, or `cd $HOME`?
 
 installhome=`pwd`
 

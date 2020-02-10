@@ -9,10 +9,11 @@ if [ "$(uname -s)" = "Darwin" ]; then
 else
     OS=$(uname -s)
 fi
-
+export BPRUN=1
 # source the files (order matters)
 if [ "$OS" = "OSX" ]; then
-  for DOTFILE in /Users/andrewg/.dotfiles/.{bashrc,env}; do
+  for DOTFILE in ${HOME}/.dotfiles/.{bashrc,env}; do
+    echo $DOTFILE
    [ -f $DOTFILE ] && source $DOTFILE
   done
 else
