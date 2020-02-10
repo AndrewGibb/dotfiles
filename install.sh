@@ -12,32 +12,24 @@ else
     OS=$(uname -s)
 fi
 
-installhome=`pwd`
-
 if [ $OS = "OSX" ]; then
   cd /Users/andrewg
+  if [ "${?}" = "1" ]; then
+    cd /Users/andrew
+  fi
 else
   cd /home/andrewg
 fi
 
-source .dotfiles/.dots
-# Install homebrew
-if [ $OS = OSX ]; then
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-#  brew tap caskroom/cask
-#  brew install brew-cask
-#  brew tap caskroom/versions
-fi
+installhome=`pwd`
 
-cd $installhome
+source .dotfiles/.dots
+
+# Uncomment these lines to install everything in the homebrew Brewfile
 #if [ $OS = "OSX" ]; then
-#  cd /Users/andrewg
-#else
-#  cd /home/andrewg
+#  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#  source maccli.sh
 #fi
 
-#source .dotfiles/.dots
-if [ $OS = "OSX" ]; then
-#  source .dotfiles/macapps.sh
-  source maccli.sh
-fi
+# Go home to finish
+cd $installhome

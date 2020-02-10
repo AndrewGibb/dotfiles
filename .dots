@@ -1,15 +1,15 @@
 # .dots
 echo $OS
 
-if [ "$OS" == "Linux" ]; then
-    base=/home/andrewg
-elif [ "$OS" == "OSX" ]; then
-    base=/Users/andrewg
-fi
+#if [ "$OS" == "Linux" ]; then
+#    base=/home/andrewg
+#elif [ "$OS" == "OSX" ]; then
+#    base=/Users/andrewg
+#fi
 
-ln -sv "${base}/.dotfiles/.gitconfig"
-ln -sv "${base}/.dotfiles/.tmux.conf"
-ln -sv "${base}/.dotfiles/.vimrc"
-ln -sv "${base}/.dotfiles/.bashrc"
-ln -sv "${base}/.dotfiles/.bash_profile"
+ln -sv "${installhome}/.dotfiles/.gitconfig"
+ln -sv "${installhome}/.dotfiles/.tmux.conf"
+ln -sv "${installhome}/.dotfiles/.vimrc"
+ln -sv "${installhome}/.dotfiles/.bashrc"
+ln -sv "${installhome}/.dotfiles/.bash_profile"
 
