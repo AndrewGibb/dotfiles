@@ -8,6 +8,8 @@ syntax enable
 runtime macros/matchit.vim
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+"set the runfimepath to be able to find fzf
+" set rtp+=/usr/local/opt/fzf
 call vundle#begin()
 
 " let Vundle manage Vundle
@@ -28,10 +30,14 @@ Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'jesseleite/vim-agriculture'
 Plugin 'IN3D/vim-raml'
+Plugin 'nathanaelkane/vim-indent-guides'
 " Plugin 'ctrlpvim/ctrlp.vim'
 " Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'wlangstroth/vim-racket'
 Plugin 'otherjoel/vim-pollen'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'hashivim/vim-terraform'
+Plugin 'dense-analysis/ale'
 "
 " " Github repos of the user 'vim-scripts'
 " " => can omit the username part
@@ -91,8 +97,11 @@ nmap <F8> :TagbarToggle<CR>
 set backspace=indent,eol,start
 
 " Configure CtrlP:
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+" let g:ctrlp_map = '<c-p>'
+" let g:ctrlp_cmd = 'CtrlP'
+
+" Enable Indent-guides by default
+let g:indent_guides_enable_on_vim_startup = 1
 
 " Test parsing flake8 errors into quickfix list:
 set errorformat+=%f:%l:%c\ %m
