@@ -80,6 +80,8 @@ set updatetime=100
 nnoremap gb :ls<CR>:b<Space>
 " In normal mode, - opens the enclosing directory. In NetRW, it does the same:
 nnoremap <silent> - :Explore<CR>
+" Generate a new vertical split with vv 
+nnoremap <silent> vv <C-w>v
 
 " Tabs
 set tabstop=2
