@@ -1,4 +1,4 @@
-" let mapleader = ","
+let mapleader = " "
 nnoremap <leader>a :echo  "<lt>leader> works! It is set to \<leader> " <cr>
 set nocompatible               " be iMproved
 filetype off                   " required!
@@ -31,6 +31,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'mhinz/vim-signify'
 Plugin 'tpope/vim-fugitive'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'preservim/vimux'
 
 " ----  Language support -----
 Plugin 'sheerun/vim-polyglot'
@@ -92,6 +93,28 @@ nnoremap gb :ls<CR>:b<Space>
 nnoremap <silent> - :Explore<CR>
 " Generate a new vertical split with vv 
 nnoremap <silent> vv <C-w>v
+" Generate a new horizontal split with hh 
+nnoremap <silent> hh <C-w>s
+
+" Move between splits (windows) with ctrl-dir, to match with .tmux.conf
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map <C-H> <C-W>h
+map <C-L> <C-W>l
+
+" Custom vimux commands:
+" Prompt for a command to run
+map <Leader>up :VimuxPromptCommand<CR>
+" Prompt for a make command to run
+map <Leader>um :VimuxPromptCommand("make ")<CR>
+" Run last command executed by VimuxRunCommand
+map <Leader>ul :VimuxRunLastCommand<CR>
+" Inspect runner pane
+map <Leader>ui :VimuxInspectRunner<CR>
+" Zoom the tmux runner pane
+map <leader>uz :VimuxZoomRunner<CR>
+" Close vim tmux runner opened by VimuxRunCommand
+map <Leader>uq :VimuxCloseRunner<CR>
 
 " Tabs
 set tabstop=2
