@@ -12,4 +12,5 @@ ln -sv "${installhome}/.dotfiles/.tmux.conf"
 ln -sv "${installhome}/.dotfiles/.vimrc"
 ln -sv "${installhome}/.dotfiles/.bashrc"
 ln -sv "${installhome}/.dotfiles/.bash_profile"
+ln -sv "${installhome}/.dotfiles/.profile"
 

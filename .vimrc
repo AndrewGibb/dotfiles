@@ -21,23 +21,29 @@ Plugin 'VundleVim/Vundle.vim'
 " " original repos on github
 " Plugin 'majutsushi/tagbar'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'vim-airline/vim-airline'
 Plugin 'craigemery/vim-autotag'
 Plugin 'JuliaEditorSupport/julia-vim'
 Plugin 'tpope/vim-surround'
-Plugin 'vimoutliner/vimoutliner'
-Plugin 'vimwiki/vimwiki', { 'branch': 'dev' }
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
-Plugin 'jesseleite/vim-agriculture'
+" Plugin 'vimoutliner/vimoutliner'
+" Plugin 'vimwiki/vimwiki', { 'branch': 'dev' }
+" Plugin 'junegunn/fzf'
+" Plugin 'junegunn/fzf.vim'
+" Plugin 'jesseleite/vim-agriculture'
 Plugin 'IN3D/vim-raml'
 Plugin 'nathanaelkane/vim-indent-guides'
 " Plugin 'ctrlpvim/ctrlp.vim'
 " Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'sheerun/vim-polyglot'
 Plugin 'wlangstroth/vim-racket'
 Plugin 'otherjoel/vim-pollen'
-Plugin 'airblade/vim-gitgutter'
+" Plugin 'airblade/vim-gitgutter'
+Plugin 'mhinz/vim-signify'
+Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'hashivim/vim-terraform'
-Plugin 'dense-analysis/ale'
+Plugin 'tpope/vim-fugitive'
+" Linters (require more work to configure)
+" Plugin 'dense-analysis/ale'
 "
 " " Github repos of the user 'vim-scripts'
 " " => can omit the username part
@@ -62,9 +68,18 @@ autocmd BufWritePre *.py,*.qaml,*.raml %s/\s\+$//e
 " netrw configuration
 let g:netrw_liststyle=3
 
+" airline configuration:
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#whitespace#enabled = 0
+
+" signify configuration:
+set updatetime=100
+
 " Custom commands:
 " open list of buffers ready to just hit a number to move:
 nnoremap gb :ls<CR>:b<Space>
+" In normal mode, - opens the enclosing directory. In NetRW, it does the same:
+nnoremap <silent> - :Explore<CR>
 
 " Tabs
 set tabstop=2
@@ -91,7 +106,7 @@ set background=dark
 colorscheme solarized
 
 " Make F8 toggle tagbar
-nmap <F8> :TagbarToggle<CR>
+" nmap <F8> :TagbarToggle<CR>
 
 " Make backspace behave in a sane way:
 set backspace=indent,eol,start

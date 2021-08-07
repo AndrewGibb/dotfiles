@@ -1,5 +1,4 @@
 # If not running interactively, don't do anything
-
 #[ -z "$PS1" ] && exit
 
 # OS
@@ -31,12 +30,12 @@ if [[ "$NETWORK_LOCATION" =~ BBCRD ]]; then
     export https_proxy="http://www-cache.rd.bbc.co.uk:8080"
 fi
 
-if command -v pyenv 1>/dev/null 2>&1; then
-    eval "$(pyenv init -)"
-    eval "$(pyenv virtualenv-init -)"
-fi
+# if command -v pyenv 1>/dev/null 2>&1; then
+#     eval "$(pyenv init -)"
+#     eval "$(pyenv virtualenv-init -)"
+# fi
+source ${HOME}/.profile
 
-eval "$(starship init bash)"
 
 # make tmux vim solarized colours behave
 #alias tmux="TERM=screen-256color tmux"
