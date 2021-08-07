@@ -19,31 +19,41 @@ Plugin 'VundleVim/Vundle.vim'
 " " My Plugins here:
 " "
 " " original repos on github
-" Plugin 'majutsushi/tagbar'
+" ----  Appearance ----
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-airline/vim-airline'
 Plugin 'craigemery/vim-autotag'
-Plugin 'JuliaEditorSupport/julia-vim'
 Plugin 'tpope/vim-surround'
+"
+" ----  Dev convenience ----
+"
+" Plugin 'airblade/vim-gitgutter'
+Plugin 'mhinz/vim-signify'
+Plugin 'tpope/vim-fugitive'
+Plugin 'nathanaelkane/vim-indent-guides'
+
+" ----  Language support -----
+Plugin 'sheerun/vim-polyglot'
+Plugin 'wlangstroth/vim-racket'
+Plugin 'otherjoel/vim-pollen'
+Plugin 'JuliaEditorSupport/julia-vim'
+Plugin 'Vimjas/vim-python-pep8-indent'
+Plugin 'hashivim/vim-terraform'
+Plugin 'IN3D/vim-raml'
+
+" Linters (require more work to configure)
+" Plugin 'dense-analysis/ale'
+"
+" ----  Unused  ----
+"
 " Plugin 'vimoutliner/vimoutliner'
 " Plugin 'vimwiki/vimwiki', { 'branch': 'dev' }
 " Plugin 'junegunn/fzf'
 " Plugin 'junegunn/fzf.vim'
 " Plugin 'jesseleite/vim-agriculture'
-Plugin 'IN3D/vim-raml'
-Plugin 'nathanaelkane/vim-indent-guides'
 " Plugin 'ctrlpvim/ctrlp.vim'
 " Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'sheerun/vim-polyglot'
-Plugin 'wlangstroth/vim-racket'
-Plugin 'otherjoel/vim-pollen'
-" Plugin 'airblade/vim-gitgutter'
-Plugin 'mhinz/vim-signify'
-Plugin 'Vimjas/vim-python-pep8-indent'
-Plugin 'hashivim/vim-terraform'
-Plugin 'tpope/vim-fugitive'
-" Linters (require more work to configure)
-" Plugin 'dense-analysis/ale'
+" Plugin 'majutsushi/tagbar'
 "
 " " Github repos of the user 'vim-scripts'
 " " => can omit the username part
