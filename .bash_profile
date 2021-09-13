@@ -36,6 +36,8 @@ fi
 # fi
 source ${HOME}/.profile
 
+export HISTCONTROL=ignoredups
+export HISTSIZE=2000
 
 # make tmux vim solarized colours behave
 #alias tmux="TERM=screen-256color tmux"
