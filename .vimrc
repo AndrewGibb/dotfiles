@@ -43,7 +43,7 @@ Plugin 'hashivim/vim-terraform'
 Plugin 'IN3D/vim-raml'
 
 " Linters (require more work to configure)
-" Plugin 'dense-analysis/ale'
+Plugin 'dense-analysis/ale'
 "
 " ----  Unused  ----
 "
@@ -93,8 +93,8 @@ nnoremap gb :ls<CR>:b<Space>
 nnoremap <silent> - :Explore<CR>
 " Generate a new vertical split with vv 
 nnoremap <silent> vv <C-w>v
-" Generate a new horizontal split with hh 
-nnoremap <silent> hh <C-w>s
+" Generate a new horizontal split with ss 
+nnoremap <silent> ss <C-w>s
 
 " Move between splits (windows) with ctrl-dir, to match with .tmux.conf
 map <C-J> <C-W>j
