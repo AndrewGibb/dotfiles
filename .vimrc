@@ -6,16 +6,9 @@ filetype plugin indent on     " required!
 syntax enable
 
 runtime macros/matchit.vim
-" set the runtime path to include Vundle and initialize
-" set rtp+=~/.vim/bundle/Vundle.vim
 "set the runfimepath to be able to find fzf
 " set rtp+=/usr/local/opt/fzf
 call plug#begin()
-
-" let Vundle manage Vundle
-" " required! 
-Plug 'VundleVim/Vundle.vim'
-"
 " " My Plugins here:
 " "
 " " original repos on github
