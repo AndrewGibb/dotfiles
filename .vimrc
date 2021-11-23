@@ -7,43 +7,43 @@ syntax enable
 
 runtime macros/matchit.vim
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+" set rtp+=~/.vim/bundle/Vundle.vim
 "set the runfimepath to be able to find fzf
 " set rtp+=/usr/local/opt/fzf
-call vundle#begin()
+call plug#begin()
 
 " let Vundle manage Vundle
 " " required! 
-Plugin 'VundleVim/Vundle.vim'
+Plug 'VundleVim/Vundle.vim'
 "
 " " My Plugins here:
 " "
 " " original repos on github
 " ----  Appearance ----
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'vim-airline/vim-airline'
-Plugin 'craigemery/vim-autotag'
-Plugin 'tpope/vim-surround'
+Plug 'altercation/vim-colors-solarized'
+Plug 'vim-airline/vim-airline'
+Plug 'craigemery/vim-autotag'
+Plug 'tpope/vim-surround'
 "
 " ----  Dev convenience ----
 "
 " Plugin 'airblade/vim-gitgutter'
-Plugin 'mhinz/vim-signify'
-Plugin 'tpope/vim-fugitive'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'preservim/vimux'
+Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-fugitive'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'preservim/vimux'
 
 " ----  Language support -----
-Plugin 'sheerun/vim-polyglot'
-Plugin 'wlangstroth/vim-racket'
-Plugin 'otherjoel/vim-pollen'
-Plugin 'JuliaEditorSupport/julia-vim'
-Plugin 'Vimjas/vim-python-pep8-indent'
-Plugin 'hashivim/vim-terraform'
-Plugin 'IN3D/vim-raml'
+Plug 'sheerun/vim-polyglot'
+Plug 'wlangstroth/vim-racket'
+Plug 'otherjoel/vim-pollen'
+Plug 'JuliaEditorSupport/julia-vim'
+Plug 'Vimjas/vim-python-pep8-indent'
+Plug 'hashivim/vim-terraform'
+Plug 'IN3D/vim-raml'
 
 " Linters (require more work to configure)
-Plugin 'dense-analysis/ale'
+Plug 'dense-analysis/ale'
 "
 " ----  Unused  ----
 "
@@ -66,7 +66,7 @@ Plugin 'dense-analysis/ale'
 " Plugin 'git://git.wincent.com/command-t.git'
 " " ...
 
-call vundle#end()
+call plug#end()
 
 " File associations
 au BufNewFile,BufRead *.qaml setf raml
