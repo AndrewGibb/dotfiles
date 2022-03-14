@@ -13,7 +13,7 @@ backup_dir="$HOME/.dotfiles.orig"
 #dotfiles_home_dir=(.zsh .aliases .bash_profile .bashrc .dircolors .editorconfig .exports
 #                   .functions .gemrc .ripgreprc .wgetrc .Xresources .zshrc)
 #dotfiles_xdg_config_dir=(.alacritty .dunst .htop .i3 .i3blocks .picom .rofi .tmux)
-dotfiles_home_dir=(.bash_profile .bashrc .gitconfig .tmux.conf .vimrc .profile)
+dotfiles_home_dir=(.bash_profile .bashrc .gitconfig .tmux.conf .vimrc .profile .zprofile .zshrc)
 dotfiles_xdg_config_dir=(nvim)
 
 # Print usage message.
