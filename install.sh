@@ -57,9 +57,9 @@ install_dotfiles() {
         fi
 
         # Output.
-        echo -e "${blue}Your config is backed up in ${backup_dir}\n" >&2
-        echo -e "${red}Please do not delete check-backup.txt in .dotfiles.orig folder.${white}" >&2
-        echo -e "It's used to backup and restore your old config.\n" >&2
+        printf "${blue}Your config is backed up in ${backup_dir}\n" >&2
+        printf "${red}Please do not delete check-backup.txt in .dotfiles.orig folder.${white}" >&2
+        printf "It's used to backup and restore your old config.\n" >&2
     fi
 
     # Install config.
@@ -77,11 +77,11 @@ install_dotfiles() {
         env ln -fs "$dotfiles_repo_dir/${dots_xdg_conf}" "$HOME/.config/${dots_xdg_conf[*]//./}"
     done
 
-    echo -e "${blue}New dotfiles is installed!\n${white}" >&2
-    echo "There may be some errors when Terminal is restarted." >&2
-    echo "Please read carefully the error messages and make sure all packages are installed. See more info in README.md." >&2
-    echo "Note that the author of this dotfiles uses dev branch in some packages." >&2
-    echo -e "If you want to restore your old config, you can use ${red}./install.sh -r${white} command." >&2
+    printf "${blue}New dotfiles is installed!\n${white}" >&2
+    printf "There may be some errors when Terminal is restarted." >&2
+    printf "Please read carefully the error messages and make sure all packages are installed. See more info in README.md." >&2
+    printf "Note that the author of this dotfiles uses dev branch in some packages." >&2
+    printf "If you want to restore your old config, you can use ${red}./install.sh -r${white} command." >&2
 }
 
 uninstall_dotfiles() {
@@ -110,12 +110,12 @@ uninstall_dotfiles() {
     fi
 
     if ! [ -f "$backup_dir/check-backup.txt" ]; then
-        echo -e "${red}You have not installed this dotfiles yet.${white}" >&2
+        printf "${red}You have not installed this dotfiles yet.${white}" >&2
         exit 1
     else
-        echo -e "${blue}Your old config has been restored!\n${white}" >&2
-        echo "Thanks for using my dotfiles." >&2
-        echo "Enjoy your next journey!" >&2
+        printf "${blue}Your old config has been restored!\n${white}" >&2
+        printf "Thanks for using my dotfiles." >&2
+        printf "Enjoy your next journey!" >&2
     fi
 
     env rm -rf "$backup_dir/check-backup.txt"
@@ -134,7 +134,7 @@ main() {
             uninstall_dotfiles
             ;;
         *)
-            echo "Command not found" >&2
+            printf "Command not found" >&2
             exit 1
     esac
 }
