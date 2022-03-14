@@ -39,6 +39,7 @@ let g:polyglot_disabled = ['python', 'python-compiler', 'python-indent']
 syntax off
 "set the runfimepath to be able to find fzf
 " set rtp+=/usr/local/opt/fzf
+set rtp+=/opt/homebrew/opt/fzf
 call plug#begin()
 " My Plugins here:
 "
