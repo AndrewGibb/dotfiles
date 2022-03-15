@@ -12,11 +12,12 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
 eval "$(starship init zsh)"
 
-set editing-mode vi
-"\C-r": reverse-search-history
+# Broken:
+# set editing-mode vi
+# bindkey "^R" reverse-search-history
 # When searching history, press Ctrl-O instead of Enter 
 # This will run the command from history, and insery the next command ready to run
-"\C-o": operate-and-get-next
+# "\C-o": operate-and-get-next
 
 export HISTCONTROL=ignoredups
 export HISTSIZE=2000
